@@ -70,8 +70,11 @@ a {
 }
 
 .main-menu__item {
-  margin-right: 30px;
   float: right;
+}
+
+.main-menu__item:not(:first-child) {
+  margin-right: 30px;
 }
 
 .line-logo {
