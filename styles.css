@@ -41,25 +41,24 @@ a {
   height: auto;
 }
 
+.container {
+  width: 1150px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .clr {
   clear: both;
 }
 
-.main-container {
-  float: left;
-  position: relative;
-  left: 50%;
-  outline: 1px dotted red;
-}
-.fixer-container {
-  float: left;
-  position: relative;
-  left: -50%;
-}
-.line-top {
+.line-main {
   padding-top: 17px;
   padding-bottom: 16px;
   background-color: #efefef;
+}
+
+.secondary-menu {
+  margin: 0 auto;
 }
 
 .main-menu__link {
@@ -68,22 +67,86 @@ a {
 
 .main-menu__item {
   margin-right: 30px;
-  float: left;
+  float: right;
 }
 
 .line-logo {
   outline: 1px dotted green;
+  padding: 20px;
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   float: left;
 }
 
 .logo__text {
-  float: left;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.1em;
   color: #f13c6e;
+  margin-left: 20px;
+}
+
+.phone {
+  color: #000000;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1.19;
+  padding: 30px 0;
+  margin-right: 40px;
+}
+
+.callback-button {
+  width: 170px;
+  height: 40px;
+  background: #ffffff;
+  border: 2px solid #f13c6e;
+  border-radius: 40px;
+  float: right;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 20px 0;
+}
+
+.secondary-menu__item {
+  margin-right: 40px;
+  display: inline-block;
+}
+
+.secondary-menu__link {
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.2;
+  display: block;
+  padding: 30px 0;
+}
+
+.hero {
+  min-height: 600px;
+  padding: 192px 0;
+  background-color: pink;
+  color: #ffffff;
+}
+
+.hero__title {
+  float: left;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.17;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.hero__text {
+  float: left;
+  line-height: 1.42;
+  max-width: 308px;
 }
